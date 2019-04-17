@@ -10,4 +10,6 @@ func main() {
 	for i, v := range pow {
 		fmt.Printf("2**%d = %d\n", i, v)
 	}
+
+	// used to range over slices and maps
 }
