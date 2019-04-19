@@ -1,13 +1,11 @@
 /*
-	A type assertion provides access to an interface value's underlying concrete
-		 value.
+	A type assertion provides access to an interface value's underlying concrete value.
 
 	t := i.(T)
 
 	This statement asserts that the interface value i holds the concrete type T and assigns the underlying T value to the variable t
 
 		If i does not hold a T, the statement will trigger a panic.
-
 
 */
 package main
