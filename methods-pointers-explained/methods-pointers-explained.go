@@ -21,7 +21,7 @@ func Scale(v *Vertex, f float64) {
 func main() {
 	v := Vertex{3, 4}
 
-	// need to use & to have access to the pointer of the Vertex value
+	// need to use '&' to have access to the pointer to the Vertex value
 	Scale(&v, 10)
 	fmt.Println(Abs(v))
 }
