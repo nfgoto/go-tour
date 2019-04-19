@@ -16,7 +16,8 @@ func (v Vertex) Abs() float64 {
 }
 
 // method with pointer receiver
-// pointer receivers used for methods that need to modify the receiver
+// Methods with pointer receivers can modify the value to which the receiver points
+// most common form of method than value receivers (copy of the original)
 func (v *Vertex) Scale(f float64) {
 	v.X = v.X * f
 	v.Y = v.Y * f
