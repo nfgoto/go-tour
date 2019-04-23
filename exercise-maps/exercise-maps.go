@@ -19,11 +19,8 @@ func WordCount(s string) map[string]int {
 	wdMap := make(map[string]int)
 
 	for _, word := range strings.Fields(s) {
-		if _, ok := wdMap[word]; ok {
-			wdMap[word] = wdMap[word] + 1
-		} else {
-			wdMap[word] = 1
-		}
+		wdMap[word]++
+
 	}
 	return wdMap
 }
