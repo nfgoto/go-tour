@@ -6,13 +6,10 @@ import "fmt"
 // a function that returns an int.
 
 func fibonacci() func() int {
-	a, b := 0, 1
+	f, g := 1, 0
 	return func() int {
-		defer func() {
-			a = a + b
-			a, b = b, a
-		}()
-		return a
+		f, g = g, f+g
+		return f
 	}
 }
 
