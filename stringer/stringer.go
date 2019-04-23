@@ -1,6 +1,11 @@
 /*
 A Stringer is a type that can describe itself as a string.
 The fmt package (and many others) look for this interface to print values.
+
+type Stringer interface {
+    String() string
+}
+
 */
 package main
 
